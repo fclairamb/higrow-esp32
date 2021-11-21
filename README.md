@@ -9,18 +9,21 @@ It can be bought on:
 - [amazon](https://www.amazon.com/dp/B07J9LRJ4T/): This is the board I used
 - [aliexpress](https://www.aliexpress.com/i/32969456777.html)
 
+Note: I moved away from this project because the moisture sensor turned out to be totally unreliable after a few weeks of usage.
+
 ## What this program does
 - Connect to one of the known wifi networks
 - Read the soil moisture sensor
-- Automatically calibrates its sensor for min/max values
+- Automatically calibrate its sensor for min/max values
 - Fetch the settings associated with each device
-- Send the sensor value on the [eedomus](http://www.eedomus.com) home automation cloud. This part be easily replaced by an other home auomation solution.
+- Send the sensor value on the [eedomus](http://www.eedomus.com) home automation cloud. This part can be easily replaced by another home auomation solution.
 
 ## Known issues
 - Light reading doesn't work, it seems to be an hardware issue
 - Coming back from deep sleep is not properly handled, probably a software issue. It has no impact at this stage thought
 - The current consumption never goes below 40mA, thus making it unsuited for low consumption
-- The program might get stuck if there's a (even temporary) wifi connection issue. As such there's a timer-based software watchdog logic to restart the devicee when this happens.
+- The program might get stuck if there's a (even temporary) wifi connection issue. As such there's a timer-based software watchdog logic to restart the device 
+when this happens.
 
 ## Getting started with it
 - Install the [USB to serial driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
