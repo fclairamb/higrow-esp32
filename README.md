@@ -3,6 +3,8 @@
 ## The board and project
 The project and the board have been started by [lucafabri](https://github.com/lucafabbri/HiGrow-Arduino-Esp) who seems to have moved to other things since then.
 
+The current program is very stable.
+
 It can be bought on:
 - [amazon](https://www.amazon.com/dp/B07J9LRJ4T/): This is the board I used
 - [aliexpress](https://www.aliexpress.com/i/32969456777.html)
@@ -10,7 +12,9 @@ It can be bought on:
 ## What this program does
 - Connect to one of the known wifi networks
 - Read the soil moisture sensor
-- Send the sensor value on the eedomus home automation cloud. This part be easily replaced by an other home auomation solution.
+- Automatically calibrates its sensor for min/max values
+- Fetch the settings associated with each device
+- Send the sensor value on the [eedomus](http://www.eedomus.com) home automation cloud. This part be easily replaced by an other home auomation solution.
 
 ## Known issues
 - Light reading doesn't work, it seems to be an hardware issue
